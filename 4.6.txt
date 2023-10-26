@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+
+    int max = 0, min = 1000, max_number, min_number;
+    int MASSIV[5] = { 3, 5, 6, 10, 8, };
+
+    for (int i = 0; i < 5; i++) {
+        if (MASSIV[i] > max) {
+            max = MASSIV[i];
+            max_number = i;
+        }
+        if (MASSIV[i] < min) {
+            min = MASSIV[i];
+            min_number = i;
+        }
+    }
+    cout << "МИН:" << min << "\n";
+    cout << "МАКС:" << max << "\n";
+    cout << "МИН_НОМЕР:" << min_number << "\n";
+    cout << "МАКС_НОМЕР:" << max_number << "\n";
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+    long long sq = 1, kyb=1;
+    cout << "Таблица квадратов:\n";
+    for (int i = 1; i <= 20; i++) {
+        sq = i*i;
+        cout << sq << "\n";
+    }
+    cout << "Таблица кубов:\n";
+    for (int i = 1; i <= 20; i++) {
+        kyb = i * i * i;
+        cout << kyb << "\n";
+    }
+    
+    return 0;
+}
